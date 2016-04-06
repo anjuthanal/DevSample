@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/gallerylayout"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/galleryspinner"
+        android:layout_gravity="center_horizontal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/glayout"
+        android:visibility="visible"
+        android:layout_below="@+id/gallerylayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectgalleryspinner"
+            android:layout_gravity="center_horizontal" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectgalleryspinner"
+            android:layout_marginTop="30dp"
+            android:id="@+id/tourspinner"
+            android:layout_gravity="center_horizontal" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tourspinner"
+            android:layout_marginTop="30dp"
+            android:id="@+id/exhibitspinner"
+            android:layout_gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/urllayout"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/glayout"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:hint="Enter URL"
+            android:layout_gravity="center_horizontal" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_below="@+id/urllayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

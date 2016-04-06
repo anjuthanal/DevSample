@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/gallerylayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <Spinner
+            android:id="@+id/galleryspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/snfclayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gallerylayout"
+        android:layout_marginTop="30dp"
+        android:visibility="visible">
+
+        <Spinner
+            android:id="@+id/selectgalleryspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <Spinner
+            android:id="@+id/tourspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectgalleryspinner"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp" />
+
+        <Spinner
+            android:id="@+id/exhibitspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tourspinner"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp" />
+
+        <Spinner
+            android:id="@+id/tagspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exhibitspinner"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Write" />
+
+
+</RelativeLayout>
